@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .article-content img {
+    @apply rounded-lg my-6 w-full;
+  }
+  
+  .article-content a {
+    @apply text-brand hover:text-brand-dark underline;
+  }
+  
+  .article-content blockquote {
+    @apply border-l-4 border-brand pl-4 italic text-text-secondary;
+  }
+}
