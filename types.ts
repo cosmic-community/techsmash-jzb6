@@ -10,6 +10,7 @@ export interface CosmicObject {
 }
 
 export interface AuthorMetadata {
+  [key: string]: unknown; // Changed: Added index signature for Record<string, unknown> compatibility
   name?: string;
   bio?: string;
   avatar?: {
@@ -25,6 +26,7 @@ export interface Author extends CosmicObject {
 }
 
 export interface CategoryMetadata {
+  [key: string]: unknown; // Changed: Added index signature for Record<string, unknown> compatibility
   name?: string;
   description?: string;
   color?: string;
@@ -36,6 +38,7 @@ export interface Category extends CosmicObject {
 }
 
 export interface ArticleMetadata {
+  [key: string]: unknown; // Changed: Added index signature for Record<string, unknown> compatibility
   headline?: string;
   excerpt?: string;
   content?: string;
